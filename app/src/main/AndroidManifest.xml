@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smartbeauty.ucsm.smartbeauty">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.FirstActivity"
+                  android:label="Smart&amp;Beauty"
+                  android:parentActivityName=".activity.MainActivity" />
+
+        <activity android:name=".activity.HairActivity"
+                  android:label="Hair Type"
+                  android:parentActivityName=".activity.FirstActivity" />
+
+        <activity android:name=".activity.FaceActivity"
+                  android:label="Make Up"
+                  android:parentActivityName=".activity.FirstActivity"/>
+
+        <activity android:name=".activity.BodyActivity"
+                  android:label="Body"
+                  android:parentActivityName=".activity.FirstActivity"/>
+        <activity android:name=".activity.NailActivity"
+                  android:label="Nail Art"
+                  android:parentActivityName=".activity.FirstActivity"/>
+        <activity android:name=".activity.DressActivity"
+                  android:label="Dress Design"
+                  android:parentActivityName=".activity.FirstActivity"/>
+        <activity android:name=".activity.FirstBoyActivity"
+                  android:label="@string/app_name"
+                  android:parentActivityName=".activity.MainActivity"/>
+        <activity android:name=".activity.BoyHairActivity"
+                  android:label="Hair Style"
+                  android:parentActivityName=".activity.FirstBoyActivity"/>
+        <activity android:name=".activity.BoyArmActivity"
+                  android:label="Body"
+                  android:parentActivityName=".activity.FirstBoyActivity"/>
+        <activity android:name=".activity.PhotoDetailActivity"/>
+
+        <activity android:name=".activity.BoyBellyActivity"
+                  android:label="Body"
+                  android:parentActivityName=".activity.FirstBoyActivity"/>
+        <activity android:name=".activity.BoyChestActivity"
+                  android:label="Body"
+                  android:parentActivityName=".activity.FirstBoyActivity"/>
+        <activity android:name=".activity.BoyLegActivity"
+                  android:label="Body"
+                  android:parentActivityName=".activity.FirstBoyActivity"/>
+        <activity android:name=".activity.About"
+                  android:label="About Us"
+            android:parentActivityName=".activity.MainActivity"/>
+
+
+    </application>
+
+</manifest>
